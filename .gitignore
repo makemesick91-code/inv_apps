@@ -1,0 +1,12 @@
+# Tool / IDE state
+.claude/
+.codegraph/
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Local tool binaries
+composer.phar

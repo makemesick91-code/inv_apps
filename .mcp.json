@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "codegraph": {
+      "command": "cmd",
+      "args": ["/c", "codegraph", "serve", "--mcp"]
+    }
+  }
+}
