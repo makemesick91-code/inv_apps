@@ -23,6 +23,14 @@ cd "$REPO_DIR"
 echo "==> git pull"
 git pull --ff-only origin main
 
+# If Hostinger's Git auto-deploy clobbered backend/public/ with a nested repo
+# clone, restore the real Laravel public/ files from the working tree.
+if [ -d "$PUBLIC_DIR/.git" ] || [ -d "$PUBLIC_DIR/backend" ]; then
+  echo "==> backend/public was clobbered by Hostinger Git auto-deploy, restoring"
+  rm -rf "$PUBLIC_DIR"/* "$PUBLIC_DIR"/.[!.]* 2>/dev/null || true
+  git -C "$REPO_DIR" checkout -- backend/public
+fi
+
 echo "==> composer install"
 cd "$BACKEND_DIR"
 "$PHP" "$COMPOSER" install --no-dev --optimize-autoloader --no-interaction
