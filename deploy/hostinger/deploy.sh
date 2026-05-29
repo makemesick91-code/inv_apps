@@ -20,8 +20,10 @@ PUBLIC_DIR="$BACKEND_DIR/public"
 
 cd "$REPO_DIR"
 
-echo "==> git pull"
-git pull --ff-only origin main
+echo "==> fetch + reset to origin/main (discards local changes)"
+git fetch origin main
+git reset --hard origin/main
+chmod +x deploy/hostinger/deploy.sh
 
 # If Hostinger's Git auto-deploy clobbered backend/public/ with a nested repo
 # clone, restore the real Laravel public/ files from the working tree.
