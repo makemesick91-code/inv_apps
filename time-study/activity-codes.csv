@@ -1,0 +1,9 @@
+code,activity,definition,measure_unit
+BM,Barang Masuk,"Catat penerimaan barang dari supplier ke gudang/ruang (kartu stok manual atau Excel)",per_invoice_line
+BK,Barang Keluar,"Catat pemakaian barang untuk perawatan / stock-out dari ruang",per_transaksi
+SO,Stock Opname,"Audit fisik mingguan: hitung + catat + selisih + berita acara",per_sesi_per_ruang
+TR,Transfer Antar Ruang,"Pindah barang antar ruang/cabang: tulis keluar + masuk + rekonsiliasi",per_transfer
+EXP,Cek Kedaluwarsa,"Cek tanggal expired periodic per ruang",per_sesi
+LAP,Buat Laporan,"Rekap data bulanan jadi laporan untuk Kepala/Owner",per_laporan
+KON,Konsolidasi Owner,"Gabungkan laporan 4 cabang jadi 1 view untuk Owner",per_periode
+LAIN,Lainnya,"Aktivitas terkait stok yang tidak masuk kategori di atas (tulis di notes)",per_kejadian

@@ -1,0 +1,5 @@
+date,start_time,end_time,duration_minutes,observer,subject_staff,branch,room,activity_code,item_count,transaction_count,notes
+2026-06-01,08:30,08:55,25,Andi,Sari (Perawat),Pusat,Ruang Perawatan 1,BK,1,8,"8 trx barang keluar pasien pagi"
+2026-06-01,10:00,10:42,42,Andi,Budi (Kepala),Pusat,Gudang Utama,BM,15,1,"Terima 1 invoice 15 line item"
+2026-06-01,14:00,14:18,18,Andi,Sari (Perawat),Pusat,Ruang Perawatan 1,BK,1,5,
+2026-06-02,07:00,07:25,25,Andi,Budi (Kepala),Pusat,Gudang Utama,EXP,200,0,"Cek tanggal expired periodic"

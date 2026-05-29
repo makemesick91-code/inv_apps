@@ -1,0 +1,10 @@
+activity_code,activity_name,total_minutes,total_count,minutes_per_unit,monthly_estimate_hours,notes
+BM,Barang Masuk,,,,,
+BK,Barang Keluar,,,,,
+SO,Stock Opname,,,,,
+TR,Transfer Antar Ruang,,,,,
+EXP,Cek Kedaluwarsa,,,,,
+LAP,Buat Laporan,,,,,
+KON,Konsolidasi Owner,,,,,
+LAIN,Lainnya,,,,,
+TOTAL,,,,,,
